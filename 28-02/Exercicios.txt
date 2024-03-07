@@ -1,0 +1,76 @@
+Exercício 3: Sistema de Reservas de Hotel
+Objetivo: Construir uma API para gerenciar reservas de hotel. 
+
+Cada RESERVA deve conter um 
+
+{
+Long ID, 
+String nome,
+LocalDateTime check-in,
+LocalDateTime check-out
+}
+
+Tarefas:
+
+- Elaborar DTOs para 
+criação e atualização de reservas.
+- Implementar uma List para armazenar as reservas.
+
+Criar endpoints:
+adicionar, 
+visualizar, 
+modificar, 
+cancelar reservas.
+
+
+---------------------------------------------------------------
+
+
+Exercício 4: Cadastro de Estudantes
+Objetivo: Criar uma API para manter um cadastro de estudantes. 
+
+Cada ESTUDANTE terá um 
+
+{
+Long ID, 
+String nome, 
+String email,
+String curso
+}
+
+Tarefas:
+- Definir DTOs apropriados para operações CRUD de estudantes.
+- Utilizar um Set para armazenar estudantes e garantir que não haja duplicatas.
+
+Criar endpoints: 
+matricular, 
+listar estudantes,
+atualizar dados, 
+remover matrículas.
+
+
+---------------------------------------------------------------
+
+
+Exercício 5: Controle de Estoque
+Objetivo: Implementar uma API para controle de estoque de um armazém. 
+
+Cada ITEM DE ESTOQUE deve ter um 
+
+{
+Long ID, 
+String nome do produto, 
+int quantidade,
+String localização no armazém
+}
+
+
+Tarefas:
+- Desenvolver DTOs para transações de estoque.
+- Manter os itens de estoque em um Map, usando a localização como chave.
+
+Criar endpoints:
+adicionar itens ao estoque, 
+listar itens,
+atualizar a quantidade, 
+remover itens do estoque.

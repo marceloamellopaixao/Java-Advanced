@@ -18,6 +18,8 @@ public class PedidoService {
         return pedidoSalvo;
     }
 
-    public List<Pedido>
+    public List<Pedido> listPedidos(){
+        return null;
+    }
 
 }
