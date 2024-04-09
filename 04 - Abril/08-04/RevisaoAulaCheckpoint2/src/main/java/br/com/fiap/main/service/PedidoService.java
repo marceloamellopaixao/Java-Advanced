@@ -26,7 +26,12 @@ public class PedidoService {
         if (pedido == null){
             throw new IllegalArgumentException("Pedido Nulo");
         }
-        if (pedido.getPrecoTotal().equals(BigDecimal.ZERO)){
+
+        if(pedido.getQuantidade() <= 0){
+            throw new QuantidadeInvalidaException("Quantidade menor ou Igual a zero");
+        }
+
+        if (pedido.getPrecoTotal().compareTo(BigDecimal.ZERO) <= 0){
             throw new PrecoInvalidoException("Preço não pode ser ZERO!!");
         }
     }
